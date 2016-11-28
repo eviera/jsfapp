@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jsfapp.iml" filepath="$PROJECT_DIR$/jsfapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsfapp-ear/jsfapp-ear.iml" filepath="$PROJECT_DIR$/jsfapp-ear/jsfapp-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsfapp-ejb/jsfapp-ejb.iml" filepath="$PROJECT_DIR$/jsfapp-ejb/jsfapp-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsfapp-web/jsfapp-web.iml" filepath="$PROJECT_DIR$/jsfapp-web/jsfapp-web.iml" />
+    </modules>
+  </component>
+</project>

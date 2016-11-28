@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="jsfapp-ear:ear">
+    <output-path>$PROJECT_DIR$/jsfapp-ear/target</output-path>
+    <root id="archive" name="jsfapp-ear.ear">
+      <element id="artifact" artifact-name="jsfapp-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

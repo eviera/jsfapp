@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="jsfapp-ejb:ejb">
+    <output-path>$PROJECT_DIR$/jsfapp-ejb/target</output-path>
+    <root id="archive" name="jsfapp-ejb.jar">
+      <element id="artifact" artifact-name="jsfapp-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>
