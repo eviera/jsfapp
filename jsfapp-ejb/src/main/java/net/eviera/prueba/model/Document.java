@@ -3,7 +3,7 @@ package net.eviera.prueba.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "DOCUMENT")
+@Table(name = "Document")
 public class Document {
 
     @Id
