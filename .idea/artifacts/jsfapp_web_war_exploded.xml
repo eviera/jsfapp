@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="jsfapp-web" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: net.bootsfaces:bootsfaces:1.0.0" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/jsfapp-web/target/jsfapp-web/META-INF/MANIFEST.MF" />
