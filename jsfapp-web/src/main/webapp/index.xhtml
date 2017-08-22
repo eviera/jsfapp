@@ -1,37 +1,46 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:b="http://bootsfaces.net/ui"
-      xmlns:h="http://java.sun.com/jsf/html"
->
-<h:head>
-    <title>BootsFaces Basic Page</title>
-</h:head>
-<h:body>
-    <b:navBar brand="Brand" brandHref="#" inverse="true" position="top" sticky="true">
-        <b:navbarLinks>
-            <b:navLink value="Home" href="#"/>
-            <b:navLink value="Link" href="#"/>
-            <b:navLink value="Link" href="#"/>
-        </b:navbarLinks>
-    </b:navBar>
-    <b:container>
-        <b:row>
-            <b:column>
-                <h1>Hello, world!</h1>
-            </b:column>
-        </b:row>
-        <b:row>
-            <b:dataTable var="doc" value="${indexController.documents}">
-                <b:dataTableColumn value="${doc.legalDocRef}"/>
-            </b:dataTable>
-        </b:row>
-        <b:row>
-            <b:jumbotron >
-                <h3>Tito</h3>
-                <p>puente y cia</p>
-            </b:jumbotron>
-        </b:row>
-    </b:container>
-</h:body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="/WEB-INF/templates/debinTemplate.xhtml">
+
+    <ui:define name="content-header">
+        <h2 class="align-center">
+            Portal <span class="text-aqua"><i>Debin</i></span> Pagos
+            <br/>
+            <small>Aca podrá realizar todas sus transacciones</small>
+        </h2>
+    </ui:define>
+
+    <ui:define name="body">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 col-sm-8 col-xs-16">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-money"/></span>
+                    <div class="info-box-content">
+                        <h2>Orden Debin</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-8 col-xs-16">
+                <div class="info-box">
+                    <span class="info-box-icon bg-red"><i class="fa fa-user-circle-o"/></span>
+                    <div class="info-box-content">
+                        <h2>Adhesión Debin</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-8 col-xs-16">
+                <div class="info-box">
+                    <span class="info-box-icon bg-teal"><i class="fa fa-table"/></span>
+                    <div class="info-box-content">
+                        <h2>Consulta Debin</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ui:define>
+
+</ui:composition>

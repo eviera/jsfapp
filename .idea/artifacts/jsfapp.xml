@@ -1,15 +1,15 @@
 <component name="ArtifactManager">
   <artifact type="exploded-ear" name="jsfapp">
-    <output-path>$USER_HOME$/Apps/wildfly-10.0.0.Final/standalone/deployments/jsfapp.ear</output-path>
+    <output-path>C:/wildfly-10.1.0.Final/standalone/deployments/jsfapp.ear</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="jsfapp-ear/javaeeApplication/JavaEE" />
       <element id="directory" name="META-INF" />
       <element id="dir-copy" path="$PROJECT_DIR$/jsfapp-ear/src/main/application" />
-      <element id="archive" name="jsfapp-web.war">
-        <element id="artifact" artifact-name="jsfapp-web:war exploded" />
-      </element>
       <element id="archive" name="jsfapp-ejb.jar">
         <element id="artifact" artifact-name="jsfapp-ejb:ejb exploded" />
+      </element>
+      <element id="directory" name="jsfapp-web.war">
+        <element id="artifact" artifact-name="jsfapp-web:war exploded" />
       </element>
     </root>
   </artifact>

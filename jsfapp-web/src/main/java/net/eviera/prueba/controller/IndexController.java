@@ -8,7 +8,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import java.util.List;
 
-@ManagedBean
+@ManagedBean(name = "indexController")
 @ViewScoped
 public class IndexController {
 

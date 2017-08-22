@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/templates/debinTemplate.xhtml">
+
+    <ui:define name="content-header">
+        <h2 class="align-center">
+            <span class="text-aqua"><i>Debin</i></span> Cobrador
+        </h2>
+    </ui:define>
+
+
+    <ui:define name="body">
+        <div class="box box-info">
+            <div class="box-header with-border">
+
+                <p:tabView>
+                    <p:tab title="Ordenar Debin">
+                        <h:form>
+                            <div class="ui-fluid">
+                                <p:panelGrid columns="4"
+                                             columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+                                             layout="grid" styleClass="ui-fluid card">
+
+                                    <p:outputLabel for="acredit" value="Cuenta a Acreditar"/>
+                                    <p:selectOneMenu id="acredit">
+                                        <f:selectItem itemLabel="Tito Puente - 30-29428141-5" itemValue="b"/>
+                                        <f:selectItem itemLabel="Juan Perez - 20-26298255-2" itemValue="a"/>
+                                        <f:selectItem itemLabel="REPL SA - 30-15928101-5" itemValue="c"/>
+                                    </p:selectOneMenu>
+
+                                    <p:outputLabel for="debit" value="Cuenta a Debitar"/>
+                                    <p:selectOneMenu id="debit">
+                                        <f:selectItem itemLabel="Juan Perez - 20-26298255-2" itemValue="a"/>
+                                        <f:selectItem itemLabel="Tito Puente - 30-29428141-5" itemValue="b"/>
+                                        <f:selectItem itemLabel="REPL SA - 30-15928101-5" itemValue="c"/>
+                                    </p:selectOneMenu>
+
+                                    <p:outputLabel for="conce" value="Concepto"/>
+                                    <p:selectOneMenu id="conce">
+                                        <f:selectItem itemLabel="VAR - Varios" itemValue="a"/>
+                                        <f:selectItem itemLabel="ALQ - Alquiler" itemValue="b"/>
+                                        <f:selectItem itemLabel="COB - Cobros" itemValue="c"/>
+                                    </p:selectOneMenu>
+
+                                    <p:outputLabel for="vige" value="Vigencia Debin"/>
+                                    <p:selectOneMenu id="vige">
+                                        <f:selectItem itemLabel="1 hora" itemValue="a"/>
+                                        <f:selectItem itemLabel="12 horas" itemValue="b"/>
+                                        <f:selectItem itemLabel="1 dia" itemValue="c"/>
+                                    </p:selectOneMenu>
+
+                                    <p:outputLabel for="impo" value="Importe"/>
+                                    <p:inputNumber id="impo" />
+
+                                    <p:outputLabel for="des" value="Descripción"/>
+                                    <p:selectOneMenu id="des">
+                                        <f:selectItem itemLabel="VAR - Varios" itemValue="a"/>
+                                        <f:selectItem itemLabel="ALQ - Alquiler" itemValue="b"/>
+                                        <f:selectItem itemLabel="COB - Cobros" itemValue="c"/>
+                                    </p:selectOneMenu>
+
+                                    <p:spacer/>
+                                    <p:spacer/>
+                                </p:panelGrid>
+
+                                <p:panelGrid columns="4"
+                                             columnClasses="ui-grid-col-2,ui-grid-col-2,ui-grid-col-4,ui-grid-col-4"
+                                             layout="grid" styleClass="ui-fluid card">
+                                    <p:commandButton id="btn1" value="Ordenar" icon="fa fa-edit" type="button" styleClass="btn-primary"/>
+                                    <p:commandButton id="btn2" value="Cancelar" icon="fa fa-ban" type="button" styleClass="btn-danger"/>
+                                    <p:spacer/>
+                                    <p:spacer/>
+                                </p:panelGrid>
+
+                            </div>
+
+                        </h:form>
+                    </p:tab>
+                    <p:tab title="Consultar Debin">
+                        <p:dataTable var="doc" value="#{indexController.documents}">
+                            <p:column headerText="Id Debin">
+                                <h:outputText value="#{doc.id}"/>
+                            </p:column>
+                            <p:column headerText="Cuenta a Acreditar">
+                            </p:column>
+                            <p:column headerText="Cuenta a Debitar">
+                            </p:column>
+                            <p:column headerText="Concepto">
+                            </p:column>
+                            <p:column headerText="Importe">
+                            </p:column>
+                            <p:column headerText="Vigencia">
+                            </p:column>
+                            <p:column headerText="Estado">
+                            </p:column>
+                        </p:dataTable>
+                    </p:tab>
+                    <p:tab title="Eliminar Debin">
+                    </p:tab>
+                </p:tabView>
+            </div>
+        </div>
+
+    </ui:define>
+
+</ui:composition>

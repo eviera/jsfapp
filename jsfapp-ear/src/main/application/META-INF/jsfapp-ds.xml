@@ -24,7 +24,7 @@
       this in META-INF/persistence.xml -->
     <datasource jndi-name="java:jboss/datasources/jsfappDS" pool-name="jsfapp"
         enabled="true" use-java-context="true">
-        <connection-url>jdbc:h2:~/jsfapp/db:jsfapp;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1</connection-url>
+        <connection-url>jdbc:h2:file:c:/Temp/jsfapp/db_jsfapp;DB_CLOSE_ON_EXIT=TRUE;DB_CLOSE_DELAY=-1</connection-url>
         <driver>h2</driver>
         <security>
             <user-name>sa</user-name>
