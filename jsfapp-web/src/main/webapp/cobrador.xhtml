@@ -17,7 +17,7 @@
         <div class="box box-info">
             <div class="box-header with-border">
 
-                <p:tabView>
+                <p:tabView id="all">
                     <p:tab title="Ordenar Debin">
                         <h:form>
                             <div class="ui-fluid">
@@ -70,8 +70,8 @@
                                 <p:panelGrid columns="4"
                                              columnClasses="ui-grid-col-2,ui-grid-col-2,ui-grid-col-4,ui-grid-col-4"
                                              layout="grid" styleClass="ui-fluid card">
-                                    <p:commandButton id="btn1" value="Ordenar" icon="fa fa-edit" type="button" styleClass="btn-success"/>
-                                    <p:commandButton id="btn2" value="Cancelar" icon="fa fa-ban" type="button" styleClass="btn-default"/>
+                                    <p:commandButton id="btn1" value="Ordenar" icon="fa fa-edit" styleClass="btn-success" action="#{indexController.ordenar()}"/>
+                                    <p:commandButton id="btn2" value="Cancelar" icon="fa fa-ban" styleClass="btn-default"/>
                                     <p:spacer/>
                                     <p:spacer/>
                                 </p:panelGrid>

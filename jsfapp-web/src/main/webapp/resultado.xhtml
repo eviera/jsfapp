@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/templates/debinTemplate.xhtml">
+
+    <ui:define name="content-header">
+        <h2>Resultados:</h2>
+        <h3><h:outputText value="#{resultadoController.comments}"/></h3>
+    </ui:define>
+
+
+    <ui:define name="body">
+        <div class="box box-info">
+            <div class="box-header with-border">
+
+                <p:tabView>
+                    <p:tab title="Resultado Debin">
+                        <p:dataTable var="doc" value="#{resultadoController.documents}">
+                            <p:column headerText="Id Debin">
+                                <h:outputText value="#{doc.id}"/>
+                            </p:column>
+                            <p:column headerText="Cuenta a Acreditar">
+                            </p:column>
+                            <p:column headerText="Cuenta a Debitar">
+                            </p:column>
+                            <p:column headerText="Concepto">
+                            </p:column>
+                            <p:column headerText="Importe">
+                            </p:column>
+                            <p:column headerText="Vigencia">
+                            </p:column>
+                            <p:column headerText="Estado">
+                            </p:column>
+                        </p:dataTable>
+                    </p:tab>
+                </p:tabView>
+            </div>
+        </div>
+
+    </ui:define>
+
+</ui:composition>

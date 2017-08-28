@@ -134,6 +134,19 @@
            <!--<classifier>dev</classifier> uncompressed theme.css-->
        </dependency>
 
+       <dependency>
+           <groupId>commons-collections</groupId>
+           <artifactId>commons-collections</artifactId>
+           <version>3.2.2</version>
+           <scope>provided</scope>
+       </dependency>
+
+       <dependency>
+           <groupId>org.jboss.spec.javax.servlet</groupId>
+           <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+           <scope>provided</scope>
+       </dependency>
+
    </dependencies>
 
    <build>
